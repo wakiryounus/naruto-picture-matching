@@ -5,7 +5,7 @@ FROM node:20 AS build
 WORKDIR /picture-matching
 
 # Copy the package.json and package-lock.json to install dependencies
-COPY package.json package-lock.json ./
+COPY package*.json ./
 
 # Install the dependencies
 RUN npm install
